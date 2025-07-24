@@ -17,6 +17,8 @@ Industrial-grade AC load controller using ESP32-S3 and opto-isolated TRIAC drive
 - **Input**: Push-button on GPIO1
 - **Output**: TRIAC gate on GPIO2
 
+![Prototype](docs/SafeSwitch.jpg)
+
 See `hardware/schematic.png` and `hardware/pcb_layout.png`.
 
 ## Build & Flash
@@ -33,6 +35,10 @@ idf.py build flash monitor
 - BLE name: **ESP32_SafeSwitch**  
 - Write “ON” or “OFF” to characteristic `abcd1234-5678-90ab-cdef-1234567890ab` under service `12345678-1234-1234-1234-1234567890ab`.
 - Press push-button to toggle locally.
+
+## Working Images
+![SafeSwitch ON condition](docs/SafeSwitch_ON.jpg)
+![SafeSwitch OFF condition](docs/SafeSwitch_OFF.jpg)
 
 ## License
 
