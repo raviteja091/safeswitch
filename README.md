@@ -21,3 +21,20 @@ See `hardware/schematic.png` and `hardware/pcb_layout.png`.
 
 ## Build & Flash
 
+git clone https://github.com/raviteja091/safeswitch.git/
+cd safeswitch/src
+idf.py set-target esp32s3
+idf.py menuconfig # adjust pins if needed
+idf.py build flash monitor
+
+
+## Usage
+
+- BLE name: **ESP32_SafeSwitch**  
+- Write “ON” or “OFF” to characteristic `abcd1234-5678-90ab-cdef-1234567890ab` under service `12345678-1234-1234-1234-1234567890ab`.
+- Press push-button to toggle locally.
+
+## License
+
+MIT © 2025 raviteja
+
